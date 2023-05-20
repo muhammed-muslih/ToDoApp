@@ -105,7 +105,7 @@ const AddToDo = ()=>{
           setAddTodo(!addToDo)
         }}>
            {/* <div className="addIcon"><FontAwesomeIcon icon={faPlusSquare}/></div> */}
-           <div> <h2>📝Add task</h2></div>
+           <div className="add-task"> <h2>📝Add task</h2></div>
         </div>
     {addToDo? 
 
@@ -131,7 +131,7 @@ const AddToDo = ()=>{
        <div className="btnDiv">
            <div> <FontAwesomeIcon icon={faCalendarPlus} /> </div>
            <div className="addBtnDiv">
-           <button style={{color:"whitesmoke",fontSize:16,backgroundColor:'rgb(51, 125, 235)'}}
+           <button style={{color:"whitesmoke",fontSize:16,backgroundColor:'rgb(51, 125, 235)',cursor:'pointer'}}
            onClick={()=>{
             if(toDoTitle){
 
@@ -148,7 +148,7 @@ const AddToDo = ()=>{
            
             }} >AddTask</button>
       
-           <button style={{color:"rgb(51, 125, 235)",fontSize:16,marginRight:"2rem"}} onClick={()=>{
+           <button style={{color:"rgb(51, 125, 235)",fontSize:16,marginRight:"2rem",cursor:'pointer'}} onClick={()=>{
             setAddTodo(false)
             setToDoTitle('')
             setToDoDescription('')
@@ -190,7 +190,7 @@ const AddToDo = ()=>{
 
       <div className="icon">
        {/* <div> <FontAwesomeIcon icon={faEdit} />  </div> */}
-       <div style={{color:"red"}}> <FontAwesomeIcon icon={faTrashAlt} onClick={()=>{
+       <div style={{color:"red",cursor:'pointer'}}> <FontAwesomeIcon icon={faTrashAlt} onClick={()=>{
         deleteTodo(data.id)
        }} /> </div>
       </div>  
@@ -214,10 +214,10 @@ const AddToDo = ()=>{
                 </div>
          
                <div className="icon">
-                <div style={{color:"blue"}}> <FontAwesomeIcon icon={faEdit} onClick={()=>{
+                <div style={{color:"blue",cursor:'pointer'}}> <FontAwesomeIcon icon={faEdit} onClick={()=>{
                    setEditTodo(data.id)
                 }} />  </div>
-                <div style={{color:"red"}}> <FontAwesomeIcon icon={faTrashAlt} onClick={()=>{
+                <div style={{color:"red",cursor:'pointer'}}> <FontAwesomeIcon icon={faTrashAlt} onClick={()=>{
                     deleteTodo(data.id)
                 }} /> </div>
                </div>  

@@ -88,6 +88,7 @@
     border: none;
     justify-content: space-around;
     width: "auto";
+    cursor: pointer;
   }
   .btnDiv{
     display: flex;
@@ -97,11 +98,18 @@
     display: flex;
     justify-content: space-between;
     margin-left: 1rem;
+    cursor: pointer;
   }
   .empty > img {
     width: auto;
   }
   .empty{
     padding: auto;
+  }
+  .add-task{
+    cursor: pointer;
+  }
+  .selectRadio{
+    cursor: pointer;
   }
   
